@@ -11,8 +11,8 @@
       --bg-alt: #16161a;
       --text: #eaeaea;
       --text-muted: #9a9a9a;
-      --accent: #6d8dff;
-      --link-hover: #9ab0ff;
+      --accent: #18b875;
+      --link-hover: #3acc8f;
       --card-bg: #1d1d22;
       --border: #2a2a30;
       --max-width: 800px;
@@ -115,6 +115,12 @@
       font-size: 0.9rem;
     }
 
+    .footer-line {
+      color: var(--text-muted);
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
   </style>
 </head>
 
@@ -132,7 +138,7 @@
       {{ content }}
     </main>
 
-    <footer>Phantom - &copy; {{ site.time | date: "%Y" }}</footer>
+    <footer>Tom - {{ site.time | date: "%Y" }}</footer>
 
   </div>
 </body>
