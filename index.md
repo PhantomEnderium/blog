@@ -5,6 +5,7 @@ title: Home
 
 # Phantom's Blog
 
+<div class="posts">
 {% for post in site.posts %}
   <a href="{{ post.url | relative_url }}">
     <div class="post-card">
@@ -20,3 +21,4 @@ title: Home
     </div>
   </a>
 {% endfor %}
+</div>
