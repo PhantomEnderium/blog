@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.title }}</title>
+
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --bg-alt: #16161a;
+      --text: #eaeaea;
+      --text-muted: #9a9a9a;
+      --accent: #6d8dff;
+      --link-hover: #9ab0ff;
+      --card-bg: #1d1d22;
+      --border: #2a2a30;
+      --max-width: 800px;
+      --radius: 12px;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: -0.5px;
+    }
+
+    .post-card {
+      background: var(--card-bg);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: 0.15s;
+    }
+
+    .post-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .post-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    /* Post page content */
+    .post-content img {
+      max-width: 100%;
+      border-radius: var(--radius);
+    }
+
+    .post-content pre {
+      background: #111;
+      padding: 12px;
+      border-radius: var(--radius);
+      overflow-x: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      {% if site.description %}
+        <p style="color: var(--text-muted); margin-top: 6px;">{{ site.description }}</p>
+      {% endif %}
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+  </div>
+</body>
+</html>

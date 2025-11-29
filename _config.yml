@@ -1,3 +1,5 @@
-title: My Jekyll Site
-description: just testing this thing
-theme: minima
+title: Phantom's Blog
+author: PhantomEnderium
+description: Games, Coding, other daily things!
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
