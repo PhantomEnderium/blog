@@ -167,10 +167,12 @@
   <div class="container">
 
     <header style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--border);">
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      {% if site.description %}
-        <p style="color: var(--text-muted); margin-top: 6px;">{{ site.description }}</p>
-      {% endif %}
+      <div>
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        {% if site.description %}
+          <p style="color: var(--text-muted); margin-top: 6px;">{{ site.description }}</p>
+        {% endif %}
+      </div>
       <nav>
         <a href="{{ '/' | relative_url }}" style="margin-right: 15px;">Home</a>
         <a href="{{ '/categories/' | relative_url }}">Categories</a>
