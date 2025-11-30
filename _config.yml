@@ -3,3 +3,5 @@ author: PhantomEnderium
 description: Games, Coding, life events, and other daily things!
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->

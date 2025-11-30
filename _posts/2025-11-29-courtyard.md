@@ -2,6 +2,8 @@
 layout: post
 title: Working at Courtyard
 date: 2025-11-29 21:00:00
+category: work
+tags: []
 ---
 
 Being mindlessly bored at work, why not spin up another post?

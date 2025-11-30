@@ -2,6 +2,8 @@
 layout: post
 title: "Black Friday - 2025"
 date: 2025-11-28 23:45:00
+category: gaming
+tags: [vr]
 ---
 
 Black Friday. Remember when people were rushing down stores the INSTANT they were open? Discounts of 90% or even more? The absolute worst brought out of people?? Now it's just "heyyyyy 50% off!" and most of it's online anyway. I used to get excited years ago and now it's not a huge thing, just "oh cool, this is a decent discount or bundled with something." I've seen crazier rushes for people trying to get Stanley Cups from Target or whatever.
