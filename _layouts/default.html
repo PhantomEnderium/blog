@@ -77,6 +77,20 @@
       letter-spacing: -0.5px;
     }
 
+    nav {
+      float: right;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: var(--link-hover);
+    }
+
     .post-card {
       background: var(--card-bg);
       padding: 20px;
@@ -157,6 +171,10 @@
       {% if site.description %}
         <p style="color: var(--text-muted); margin-top: 6px;">{{ site.description }}</p>
       {% endif %}
+      <nav>
+        <a href="{{ '/' | relative_url }}" style="margin-right: 15px;">Home</a>
+        <a href="{{ '/categories/' | relative_url }}">Categories</a>
+      </nav>
     </header>
 
     <main>
